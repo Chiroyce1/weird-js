@@ -5,6 +5,6 @@ Demonstrating some fun features of JavaScript
 This demonstrates how a link can be clicked, and then the click can be prevented by using a simple function
 ```js
 linkElement.addEventListener("click", (e) => {
-  e.preventDefault(); // prevents the link
+  e.preventDefault(); // prevents the link from being clicked
 })
 ```
