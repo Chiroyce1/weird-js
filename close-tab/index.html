@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magically Close Tabs</title>
+</head>
+<body>
+    <a href="https://wikipedia.org">Click me, I will open in another tab, wait 2 seconds and see the magic.</a>
+    <script>
+        document.querySelectorAll('a')[0].addEventListener("click", (e) => {
+            e.preventDefault();
+            tab = window.open('https://wikipedia.org')
+            setTimeout(() => {
+                tab.close();
+            }, 2000);
+            document.write("Boom! I just closed the tab<br>More info <a href='https://developer.mozilla.org/en-US/docs/Web/API/Window/close'>here</a>")
+        })
+    </script>
+</body>
+</html>
