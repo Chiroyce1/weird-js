@@ -15,7 +15,6 @@ info.innerText = 'More info here.'
 document.body.appendChild(info)
 
 copy.addEventListener('copy', (e) => {
-    console.log("Running!")
     e.clipboardData.setData('text/plain', "You didn't copy this right? 😱"); 
     e.preventDefault(); 
 });
