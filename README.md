@@ -35,5 +35,3 @@ element.addEventListener("copy", (e) => {
 This is why you should always be careful when you copy text from a website and paste it somewhere else. 
 
 ---
-
-<script>console.log("JavaScript works when using GitHub pages along with markdown!")</script>
