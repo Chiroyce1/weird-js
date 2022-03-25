@@ -13,7 +13,7 @@ and then, opening a new tab (using `window.open`) and closing it after a while. 
 ```js
 linkElement.addEventListener("click", (e) => {
     e.preventDefault(); // Prevent the user from clicking the link
-    tab = window.open('https://wikipedia.org') // Open a new tab
+    tab = window.open("https://wikipedia.org") // Open a new tab
     setTimeout(() => {
         tab.close(); // Close the newly opened tab after 2 seconds
     }, 2000);
@@ -28,7 +28,7 @@ This demonstrates how whatever you copy from a website can be modified, when you
 
 ```js
 element.addEventListener("copy", (e) => {
-  e.clipboardData.setData('text/plain', "Foo Bar"); // Use the event to copy something into the users clipboard
+  e.clipboardData.setData("text/plain", "Foo Bar"); // Use the event to copy something into the users clipboard
   e.preventDefault(); // Cancel the actual event.
 })
 ```
