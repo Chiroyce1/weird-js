@@ -35,6 +35,10 @@ for (const property in navigator) {
     switch (key) {
         case 'hardwareConcurrency':
             value += ' (number of physical CPU cores)';
+            break;
+        case 'maxTouchPoints':
+            value += " (number of touch points on your device's screen)";
+            break;
     }
 
     addRow(key, value);
@@ -42,4 +46,3 @@ for (const property in navigator) {
 
 addRow('Browser window size', `${window.innerWidth}x${window.innerHeight}`);
 addRow('Computer Screen size', `${screen.width}x${screen.height}`);
-addRow('Screen touchpoints', navigator.maxTouchPoints);
