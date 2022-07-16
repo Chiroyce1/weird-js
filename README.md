@@ -14,9 +14,7 @@ and then, opening a new tab (using `window.open`) and closing it after a while. 
 linkElement.addEventListener("click", (e) => {
     e.preventDefault(); // Prevent the user from clicking the link
     tab = window.open("https://wikipedia.org") // Open a new tab
-    setTimeout(() => {
-        tab.close(); // Close the newly opened tab after 2 seconds
-    }, 2000);
+    setTimeout(() => tab.close(), 2000); // Close the newly opened tab after 2 seconds
 })
 ```
 Kinda scary but fun at the same time.
