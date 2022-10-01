@@ -19,7 +19,9 @@ let canvas = document.createElement("canvas");
 let webgl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
 let debugInfo = webgl.getExtension("RENDERER") || webgl.getExtension("webgl_debug_renderer_info");
 
-addRow("GPU", webgl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL));
+if (debugInfo) {
+    addRow("GPU", webgl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL));
+}
 
 for (const property in navigator) {
     if (
