@@ -13,7 +13,7 @@ and then, opening a new tab (using `window.open`) and closing it after a while. 
 ```js
 linkElement.addEventListener("click", (e) => {
     e.preventDefault(); // Prevent the user from clicking the link
-    tab = window.open("https://wikipedia.org") // Open a new tab
+    tab = window.open("https://wikipedia.org"); // Open a new tab
     setTimeout(() => tab.close(), 2000); // Close the newly opened tab after 2 seconds
 })
 ```
