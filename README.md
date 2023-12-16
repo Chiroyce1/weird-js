@@ -1,3 +1,8 @@
+<head>
+    <meta name="description" content="Explore some weird features of JavaScript in this interactive demonstration.">
+    <meta name="keywords" content="weird-js, JavaScript, features, unconventional JavaScript, JavaScript demonstration, demo">
+</head>
+
 # weird-js
 #### Demonstrating some weird features of JavaScript
 
